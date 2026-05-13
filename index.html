@@ -1,0 +1,491 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SalesStack Customer Flow Diagnostic | SalesStack Marketing</title>
+    <meta
+      name="description"
+      content="Take the free 2-minute SalesStack Customer Flow Check and discover where your business may be losing leads, bookings, and repeat revenue."
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/icons/salesstack-favicon.svg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ink: "#08111F",
+              navy: "#07111F",
+              gold: "#FF4D4D",
+              amber: "#22D3EE",
+              emerald: "#14B8A6",
+              teal: "#22D3EE",
+              softwhite: "#F8FAFC",
+              cream: "#F5F3FF"
+            },
+            boxShadow: {
+              premium: "0 24px 70px rgba(8, 17, 31, 0.18)"
+            }
+          }
+        }
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background: #f8fafc;
+      }
+
+      .answer-option.selected {
+        border-color: #ff4d4d;
+        background: #fff1f2;
+        box-shadow: 0 12px 30px rgba(255, 77, 77, 0.16);
+      }
+
+      .framework-step::after {
+        content: "";
+        position: absolute;
+        right: -24px;
+        top: 50%;
+        width: 32px;
+        height: 1px;
+        background: #ff4d4d;
+      }
+
+      .framework-step:last-child::after {
+        display: none;
+      }
+
+      @media (max-width: 1023px) {
+        .framework-step::after {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body class="font-sans text-ink antialiased">
+    <header class="sticky top-0 z-40 border-b border-slate-200/80 bg-white/90 backdrop-blur">
+      <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+        <a href="#top" class="flex items-center gap-3" aria-label="SalesStack Marketing">
+          <img src="assets/icons/salesstack-logo.svg" alt="SalesStack Marketing" class="h-12 w-auto" />
+        </a>
+        <a
+          href="#diagnostic"
+          class="hidden rounded-md bg-gold px-5 py-3 text-sm font-bold text-white shadow-sm transition hover:bg-red-600 md:inline-flex"
+        >
+          Take The Check
+        </a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="relative overflow-hidden bg-ink">
+        <div class="absolute inset-0 opacity-25">
+          <div class="h-full w-full bg-[radial-gradient(circle_at_24%_24%,rgba(255,77,77,.42),transparent_28%),linear-gradient(135deg,rgba(34,211,238,.28),transparent_42%)]"></div>
+        </div>
+        <div class="relative mx-auto grid max-w-6xl gap-10 px-5 py-16 md:grid-cols-[1.03fr_.97fr] md:py-20">
+          <div class="flex flex-col justify-center">
+            <p class="mb-5 inline-flex w-fit items-center gap-2 rounded-md border border-gold/35 px-3 py-2 text-xs font-bold uppercase tracking-[0.18em] text-gold">
+              SalesStack Customer Flow Assessment
+            </p>
+            <h1 class="max-w-3xl text-4xl font-bold leading-tight text-white md:text-6xl">
+              How Smart Businesses Build Predictable Lead Flow Without Depending Only on Ads
+            </h1>
+            <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-200">
+              Discover the simple systems businesses use to consistently attract leads, follow up automatically, increase
+              bookings, and generate repeat customers - even when ads slow down.
+            </p>
+            <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+              <a href="#diagnostic" class="inline-flex items-center justify-center gap-2 rounded-md bg-gold px-6 py-4 text-sm font-bold text-white shadow-premium transition hover:bg-red-600">
+                Take The Free 2-Minute SalesStack Flow Check
+                <i data-lucide="arrow-right" class="h-4 w-4"></i>
+              </a>
+            </div>
+          </div>
+          <div class="relative min-h-[420px] overflow-hidden rounded-md border border-white/10 bg-white/8 p-5 shadow-premium backdrop-blur">
+            <div class="grid gap-4">
+              <div class="rounded-md bg-white p-5">
+                <div class="mb-4 flex items-center justify-between">
+                  <span class="text-sm font-bold text-ink">Customer Flow Console</span>
+                  <span class="rounded-md bg-emerald/10 px-3 py-1 text-xs font-bold text-emerald">Live Systems View</span>
+                </div>
+                <div class="space-y-3">
+                  <div class="flex items-center gap-3 rounded-md border border-slate-200 p-3">
+                    <i data-lucide="radio-tower" class="h-5 w-5 text-teal"></i>
+                    <div class="h-2 flex-1 rounded-full bg-slate-200"><div class="h-2 w-4/5 rounded-full bg-teal"></div></div>
+                  </div>
+                  <div class="flex items-center gap-3 rounded-md border border-slate-200 p-3">
+                    <i data-lucide="mail-check" class="h-5 w-5 text-gold"></i>
+                    <div class="h-2 flex-1 rounded-full bg-slate-200"><div class="h-2 w-3/5 rounded-full bg-gold"></div></div>
+                  </div>
+                  <div class="flex items-center gap-3 rounded-md border border-slate-200 p-3">
+                    <i data-lucide="calendar-check" class="h-5 w-5 text-emerald"></i>
+                    <div class="h-2 flex-1 rounded-full bg-slate-200"><div class="h-2 w-2/3 rounded-full bg-emerald"></div></div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid-cols-2 gap-4">
+                <div class="rounded-md bg-cream p-4">
+                  <p class="text-xs font-bold uppercase tracking-wide text-slate-500">Leak Risk</p>
+                  <p class="mt-2 text-3xl font-bold text-ink">31%</p>
+                </div>
+                <div class="rounded-md bg-white p-4">
+                  <p class="text-xs font-bold uppercase tracking-wide text-slate-500">Follow-Up</p>
+                  <p class="mt-2 text-3xl font-bold text-emerald">Active</p>
+                </div>
+              </div>
+              <div class="rounded-md border border-gold/25 bg-ink p-5 text-white">
+                <p class="text-sm font-bold text-gold">Predictability improves when every stage is measured.</p>
+                <p class="mt-2 text-sm leading-6 text-slate-300">Lead source, capture, speed, follow-up, booking, conversion, retention, repeat revenue.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white px-5 py-16">
+        <div class="mx-auto grid max-w-6xl gap-10 md:grid-cols-[.9fr_1.1fr]">
+          <div>
+            <p class="text-sm font-bold uppercase tracking-[0.18em] text-gold">The Real Constraint</p>
+            <h2 class="mt-3 text-3xl font-bold leading-tight text-ink md:text-4xl">
+              Most Businesses Don't Have a Customer Problem. They Have a System Problem.
+            </h2>
+            <p class="mt-5 leading-7 text-slate-600">
+              Many businesses work harder every month - running ads, posting content, trying new strategies, and hoping
+              referrals continue. But when marketing slows down, customer flow slows down too.
+            </p>
+            <p class="mt-5 font-semibold text-ink">
+              Predictable customer flow does not come from doing more marketing. It comes from having the right systems in place.
+            </p>
+          </div>
+          <div class="grid gap-3 sm:grid-cols-2">
+            <div class="rounded-md border border-slate-200 p-5"><i data-lucide="trending-down" class="mb-4 h-5 w-5 text-amber"></i>Unpredictable sales</div>
+            <div class="rounded-md border border-slate-200 p-5"><i data-lucide="shuffle" class="mb-4 h-5 w-5 text-amber"></i>Inconsistent lead flow</div>
+            <div class="rounded-md border border-slate-200 p-5"><i data-lucide="circle-alert" class="mb-4 h-5 w-5 text-amber"></i>Missed opportunities</div>
+            <div class="rounded-md border border-slate-200 p-5"><i data-lucide="messages-square" class="mb-4 h-5 w-5 text-amber"></i>Weak follow-up</div>
+            <div class="rounded-md border border-slate-200 p-5 sm:col-span-2"><i data-lucide="refresh-cw" class="mb-4 h-5 w-5 text-amber"></i>Lost repeat revenue</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="diagnostic" class="bg-softwhite px-5 py-16">
+        <div class="mx-auto max-w-4xl">
+          <div class="mb-8 text-center">
+            <p class="text-sm font-bold uppercase tracking-[0.18em] text-gold">Free Micro Diagnostic</p>
+            <h2 class="mt-3 text-3xl font-bold text-ink md:text-4xl">How Predictable Is Your Customer Flow?</h2>
+            <p class="mx-auto mt-4 max-w-2xl leading-7 text-slate-600">
+              Answer 6 quick questions to discover whether your business has a structured customer flow system - or whether
+              leads and revenue are leaking silently.
+            </p>
+          </div>
+
+          <div class="rounded-md bg-white p-5 shadow-premium md:p-8">
+            <div class="mb-6">
+              <div class="mb-2 flex items-center justify-between text-sm font-bold text-slate-600">
+                <span id="stepLabel">Step 1 of 6</span>
+                <span id="completionLabel">17%</span>
+              </div>
+              <div class="h-2 rounded-full bg-slate-200">
+                <div id="progressBar" class="h-2 rounded-full bg-gold transition-all duration-500" style="width: 16.66%"></div>
+              </div>
+            </div>
+
+            <form id="diagnosticForm" novalidate>
+              <div id="questionView"></div>
+              <div id="contactView" class="hidden">
+                <h3 class="text-2xl font-bold text-ink">Your Results Are Ready</h3>
+                <p class="mt-3 leading-7 text-slate-600">
+                  Enter your details below to receive your Customer Flow Score and personalized insight report.
+                </p>
+                <div class="mt-6 grid gap-4 md:grid-cols-2">
+                  <label class="block">
+                    <span class="text-sm font-bold text-slate-700">Full name</span>
+                    <input name="name" class="mt-2 w-full rounded-md border border-slate-300 px-4 py-3 outline-none focus:border-gold focus:ring-2 focus:ring-gold/20" required />
+                  </label>
+                  <label class="block">
+                    <span class="text-sm font-bold text-slate-700">Email address</span>
+                    <input name="email" type="email" class="mt-2 w-full rounded-md border border-slate-300 px-4 py-3 outline-none focus:border-gold focus:ring-2 focus:ring-gold/20" required />
+                  </label>
+                  <label class="block">
+                    <span class="text-sm font-bold text-slate-700">Phone number</span>
+                    <input name="phone" class="mt-2 w-full rounded-md border border-slate-300 px-4 py-3 outline-none focus:border-gold focus:ring-2 focus:ring-gold/20" required />
+                  </label>
+                  <label class="block">
+                    <span class="text-sm font-bold text-slate-700">Business name</span>
+                    <input name="business_name" class="mt-2 w-full rounded-md border border-slate-300 px-4 py-3 outline-none focus:border-gold focus:ring-2 focus:ring-gold/20" required />
+                  </label>
+                  <label class="block md:col-span-2">
+                    <span class="text-sm font-bold text-slate-700">Business type</span>
+                    <input name="business_type" class="mt-2 w-full rounded-md border border-slate-300 px-4 py-3 outline-none focus:border-gold focus:ring-2 focus:ring-gold/20" required />
+                  </label>
+                </div>
+              </div>
+
+              <p id="formMessage" class="mt-5 hidden rounded-md bg-cream px-4 py-3 text-sm font-semibold text-ink"></p>
+
+              <div class="mt-7 flex items-center justify-between gap-3">
+                <button type="button" id="backBtn" class="inline-flex items-center gap-2 rounded-md border border-slate-300 px-5 py-3 text-sm font-bold text-ink transition hover:bg-slate-50">
+                  <i data-lucide="arrow-left" class="h-4 w-4"></i>
+                  Back
+                </button>
+                <button type="button" id="nextBtn" class="inline-flex items-center gap-2 rounded-md bg-ink px-6 py-3 text-sm font-bold text-white transition hover:bg-navy">
+                  Next
+                  <i data-lucide="arrow-right" class="h-4 w-4"></i>
+                </button>
+                <button type="submit" id="submitBtn" class="hidden inline-flex items-center gap-2 rounded-md bg-gold px-6 py-3 text-sm font-bold text-white transition hover:bg-red-600">
+                  See My Customer Flow Score
+                  <i data-lucide="send" class="h-4 w-4"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-ink px-5 py-16 text-white">
+        <div class="mx-auto max-w-6xl">
+          <div class="max-w-3xl">
+            <p class="text-sm font-bold uppercase tracking-[0.18em] text-gold">The Model</p>
+            <h2 class="mt-3 text-3xl font-bold md:text-4xl">SalesStack Lead-to-Sale Flow Model</h2>
+            <p class="mt-4 leading-7 text-slate-300">
+              Most businesses only focus on the first step. The businesses growing consistently optimize the entire flow.
+            </p>
+          </div>
+          <div class="mt-8 grid gap-4 lg:grid-cols-8">
+            <div class="framework-step relative rounded-md border border-white/10 bg-white/8 p-4 text-sm font-bold">Lead Generation</div>
+            <div class="framework-step relative rounded-md border border-white/10 bg-white/8 p-4 text-sm font-bold">Lead Capture</div>
+            <div class="framework-step relative rounded-md border border-white/10 bg-white/8 p-4 text-sm font-bold">Instant Response</div>
+            <div class="framework-step relative rounded-md border border-white/10 bg-white/8 p-4 text-sm font-bold">Follow-Up</div>
+            <div class="framework-step relative rounded-md border border-white/10 bg-white/8 p-4 text-sm font-bold">Booking</div>
+            <div class="framework-step relative rounded-md border border-white/10 bg-white/8 p-4 text-sm font-bold">Conversion</div>
+            <div class="framework-step relative rounded-md border border-white/10 bg-white/8 p-4 text-sm font-bold">Retention</div>
+            <div class="framework-step relative rounded-md border border-gold/40 bg-gold p-4 text-sm font-bold text-white">Repeat Revenue</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white px-5 py-16">
+        <div class="mx-auto grid max-w-6xl gap-10 md:grid-cols-[.9fr_1.1fr]">
+          <div>
+            <p class="text-sm font-bold uppercase tracking-[0.18em] text-gold">Value Stack</p>
+            <h2 class="mt-3 text-3xl font-bold text-ink md:text-4xl">Here's What You'll Receive</h2>
+          </div>
+          <div class="grid gap-3 sm:grid-cols-2">
+            <div class="rounded-md border border-slate-200 p-5 font-semibold">Your Customer Flow Score</div>
+            <div class="rounded-md border border-slate-200 p-5 font-semibold">Your SalesStack Lead-to-Sale Flow Framework</div>
+            <div class="rounded-md border border-slate-200 p-5 font-semibold">Your 5 Customer Systems Breakdown</div>
+            <div class="rounded-md border border-slate-200 p-5 font-semibold">Revenue Leak Detection Insights</div>
+            <div class="rounded-md border border-slate-200 p-5 font-semibold">Follow-Up & Conversion Recommendations</div>
+            <div class="rounded-md border border-slate-200 p-5 font-semibold">Retention and Repeat Revenue Opportunities</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-cream px-5 py-16">
+        <div class="mx-auto max-w-4xl text-center">
+          <h2 class="text-3xl font-bold text-ink md:text-4xl">Find the Customer Flow Leaks Before Another Month Slips By</h2>
+          <p class="mx-auto mt-4 max-w-2xl leading-7 text-slate-700">
+            Take the free diagnostic and get a personalized report that shows what to fix first.
+          </p>
+          <a href="#diagnostic" class="mt-7 inline-flex items-center justify-center gap-2 rounded-md bg-ink px-6 py-4 text-sm font-bold text-white transition hover:bg-navy">
+            Take The Free 2-Minute SalesStack Flow Check
+            <i data-lucide="arrow-right" class="h-4 w-4"></i>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-ink px-5 py-8 text-sm text-slate-400">
+      <div class="mx-auto flex max-w-6xl flex-col justify-between gap-3 md:flex-row">
+        <p>SalesStack Marketing</p>
+        <p>Build better lead systems. Convert more customers.</p>
+      </div>
+    </footer>
+
+    <a href="#diagnostic" class="fixed bottom-4 left-4 right-4 z-50 inline-flex items-center justify-center rounded-md bg-gold px-5 py-4 text-sm font-bold text-white shadow-premium md:hidden">
+      Take The Free SalesStack Check
+    </a>
+
+    <script>
+      const questions = [
+        {
+          id: "lead_source",
+          prompt: "Where do most of your customers currently come from?",
+          options: ["Referrals only", "Social media/content", "Paid ads", "Website/SEO", "Outreach", "Multiple sources", "Not sure"]
+        },
+        {
+          id: "response_speed",
+          prompt: "When a new lead comes in, how fast do you usually respond?",
+          options: ["Within 5 minutes", "Within 1 hour", "Same day", "Next day or later", "It depends"]
+        },
+        {
+          id: "lead_capture",
+          prompt: "Do you have a system that captures every inquiry?",
+          options: ["Yes, everything is captured", "Some are captured", "Mostly manual", "No clear system"]
+        },
+        {
+          id: "follow_up",
+          prompt: "If a lead does not buy or book immediately, what happens next?",
+          options: ["Automated follow-up sequence", "Manual follow-up", "Occasional follow-up", "Nothing"]
+        },
+        {
+          id: "booking_conversion",
+          prompt: "Do you have a clear process that moves leads into bookings or sales?",
+          options: ["Yes, fully structured", "Somewhat structured", "Not really", "No system"]
+        },
+        {
+          id: "retention",
+          prompt: "Do you have a system to bring past customers or old leads back?",
+          options: ["Yes", "Sometimes", "Not really", "No"]
+        }
+      ];
+
+      const state = {
+        step: 0,
+        answers: {}
+      };
+
+      const questionView = document.getElementById("questionView");
+      const contactView = document.getElementById("contactView");
+      const stepLabel = document.getElementById("stepLabel");
+      const completionLabel = document.getElementById("completionLabel");
+      const progressBar = document.getElementById("progressBar");
+      const backBtn = document.getElementById("backBtn");
+      const nextBtn = document.getElementById("nextBtn");
+      const submitBtn = document.getElementById("submitBtn");
+      const form = document.getElementById("diagnosticForm");
+      const formMessage = document.getElementById("formMessage");
+
+      function showMessage(message, isError = true) {
+        formMessage.textContent = message;
+        formMessage.classList.remove("hidden");
+        formMessage.classList.toggle("bg-red-50", isError);
+        formMessage.classList.toggle("text-red-700", isError);
+      }
+
+      function hideMessage() {
+        formMessage.classList.add("hidden");
+      }
+
+      function updateProgress() {
+        const current = Math.min(state.step + 1, 7);
+        const percent = Math.round((current / 7) * 100);
+        stepLabel.textContent = state.step < questions.length ? `Step ${state.step + 1} of 6` : "Final step";
+        completionLabel.textContent = `${percent}%`;
+        progressBar.style.width = `${percent}%`;
+      }
+
+      function renderQuestion() {
+        hideMessage();
+        updateProgress();
+        const isContactStep = state.step >= questions.length;
+        questionView.classList.toggle("hidden", isContactStep);
+        contactView.classList.toggle("hidden", !isContactStep);
+        nextBtn.classList.toggle("hidden", isContactStep);
+        submitBtn.classList.toggle("hidden", !isContactStep);
+        backBtn.disabled = state.step === 0;
+        backBtn.classList.toggle("opacity-40", state.step === 0);
+
+        if (isContactStep) {
+          lucide.createIcons();
+          return;
+        }
+
+        const question = questions[state.step];
+        questionView.innerHTML = `
+          <h3 class="text-2xl font-bold text-ink">${question.prompt}</h3>
+          <div class="mt-6 grid gap-3">
+            ${question.options
+              .map(
+                (option) => `
+                  <button
+                    type="button"
+                    class="answer-option rounded-md border border-slate-200 px-4 py-4 text-left font-semibold text-ink transition hover:border-gold hover:bg-cream ${state.answers[question.id] === option ? "selected" : ""}"
+                    data-answer="${option.replace(/"/g, "&quot;")}"
+                  >
+                    ${option}
+                  </button>
+                `
+              )
+              .join("")}
+          </div>
+        `;
+
+        questionView.querySelectorAll(".answer-option").forEach((button) => {
+          button.addEventListener("click", () => {
+            state.answers[question.id] = button.dataset.answer;
+            renderQuestion();
+          });
+        });
+      }
+
+      nextBtn.addEventListener("click", () => {
+        const question = questions[state.step];
+        if (!state.answers[question.id]) {
+          showMessage("Please select the option that best describes your current system.");
+          return;
+        }
+        state.step += 1;
+        renderQuestion();
+      });
+
+      backBtn.addEventListener("click", () => {
+        if (state.step > 0) {
+          state.step -= 1;
+          renderQuestion();
+        }
+      });
+
+      form.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        hideMessage();
+
+        if (!form.checkValidity()) {
+          showMessage("Please complete every field so we can prepare your report.");
+          form.reportValidity();
+          return;
+        }
+
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = "Calculating your customer flow score...";
+        showMessage("Calculating your customer flow score...", false);
+
+        const formData = new FormData(form);
+        const payload = {
+          name: formData.get("name"),
+          email: formData.get("email"),
+          phone: formData.get("phone"),
+          business_name: formData.get("business_name"),
+          business_type: formData.get("business_type"),
+          answers: state.answers
+        };
+
+        try {
+          const response = await fetch("/api/submit", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(payload)
+          });
+          const result = await response.json();
+          if (!response.ok || !result.success) throw new Error(result.message || "Submission failed.");
+          window.location.href = result.redirect_url || "/result.html";
+        } catch (error) {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = 'See My Customer Flow Score <i data-lucide="send" class="h-4 w-4"></i>';
+          lucide.createIcons();
+          showMessage(error.message || "Something went wrong. Please try again.");
+        }
+      });
+
+      renderQuestion();
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
+
+
